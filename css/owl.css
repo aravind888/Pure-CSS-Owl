@@ -1,0 +1,218 @@
+body{
+	width:100%;
+	height: 100%;
+	margin: 0;
+	background-color: #E79A58;;
+}
+.container{
+	width:800px;
+	height: 500px;
+	position: relative;
+	margin: 0 auto;
+}
+.owl-container{
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+}
+.owl-wrapper{
+	width: 240px;
+	margin: 0 auto;
+    overflow: hidden;
+    transition: all 4s ease;
+    animation: fly 4s linear infinite reverse;
+}
+@keyframes fly{
+	0%{transform: translateY(0px);}
+	50%{transform: translateY(25px);}
+	100%{transform: translateY(0px);}
+}
+.bird-part{
+	float: left;
+	width: 80px;
+    height: 110px;
+	position: relative;
+}
+.bird-part:nth-child(2){
+	width: 70px;
+}
+.bird-center-part{
+	height: 110px;
+}
+.owl-inside-parts:nth-child(1){
+	height: 15px;
+	transform: translateY(1px);
+}
+.owl-inside-parts:nth-child(2){
+	height: 80px;
+	padding:0px 5px;
+	background-color: #865e16;
+	border-radius: 0px 0px 50px 50px;
+	position: relative;
+	z-index: 2;
+}
+.owl-inside-parts:nth-child(3){
+	height: 15px;
+    margin-top: -10px;
+}
+.owl-eyes{
+	position: absolute;
+    overflow: hidden;
+    margin-top: -5px;
+}
+.left-eye-wrapper{
+	width: 24px;
+    background-color: #ffffff;
+    height: 24px;
+    border-radius: 50px;
+    margin: 2.5px;
+    position: relative;
+    box-shadow: inset 0px 10px 0px #000000;
+    animation: ey 4s linear infinite reverse; 
+}
+@keyframes ey{
+	0%{box-shadow: inset 0px 10px 0px #000000;}
+	35%{box-shadow: inset 0px 10px 0px #000000;}
+	45%{box-shadow: inset 0px 35px 0px #000000;}
+	50%{box-shadow: inset 0px 10px 0px #000000;}
+	75%{box-shadow: inset 0px 10px 0px #000000;}
+	100%{box-shadow: inset 0px 10px 0px #000000;}
+}
+.eye{
+	width: 6px;
+    height: 6px;
+    background-color: #000000;
+    border-radius: 100px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    transition: all 1s ease-out;
+}
+.eye-cover{
+	width: 30px;
+    height: 30px;
+    float: left;
+    background-color: #865e16;
+    border-radius: 50px;
+}
+.eye-cover:nth-child(2){
+	background-color: #442f0a;
+}
+.owl-triangle1{
+	width: 0px;
+    transform: rotate(180deg);
+    border-bottom: 15px solid transparent;
+}
+.owl-triangle1:nth-child(1) {
+    border-right: 9px solid #865e16;
+    float: left;
+}
+.owl-triangle1:nth-child(2) {
+    border-left: 9px solid #442f0a;
+    float: right;
+}
+.owl-nose-part{
+	padding-top: 18px;
+}
+.owl-nose-center{
+	width: 12px;
+    height: 15px;
+    margin: 0 auto;
+}
+.nose:nth-child(1){
+	float: left;
+    border-bottom: 10px solid transparent;
+    border-right: 6px solid #442f0a;
+}
+.nose:nth-child(2){
+	float: right;
+    border-bottom: 10px solid transparent;
+        border-left: 6px solid #0c0c0b;
+}
+.owl-stomach{
+	 width: 45px;
+    height: 46px;
+    background-color: #ffffff;
+    margin: 0 auto;
+    position: relative;
+    border-radius: 20px 20px 50px 50px;
+    overflow: hidden;
+}
+.owl-half-back{
+	width: 35px;
+    height: 80px;
+    position: absolute;
+    right: 0;
+    background-color: #442f0a;
+    border-radius: 0px 0px 33px 0px;
+    z-index: -1;
+}
+.stomach-inside{
+	width: 22.5px;
+	height: 46px;
+	background-color: #928d85;
+	position: absolute;
+	right: 0;
+}
+.owl-wings{
+	width: 50px;
+    height: 35px;
+    position: absolute;
+    top: 30px;
+}
+@keyframes wig{
+	0%{transform: translateY(5deg);}
+	100%{transform: rotate(0deg);}
+}
+.owl-rightwings{
+	left: 0;
+	transform:translateX(-5px);	
+	animation:wig 0.2s ease-out 0s infinite linear;	
+}
+.owl-leftwings{
+	right: 0;
+    transform: rotateY(180deg) translateX(-5px);
+    animation:wig 0.2s ease-out 0s infinite linear;
+}
+.wing1{
+	height: 6px;
+    background-color: #865e16;
+    border-radius: 0px 0px 10px 0px;
+    border-bottom: 1px solid #9a7023;
+    box-shadow: inset 9px 0px 6px #000000;
+    transition: all 0.4s ease;
+    animation: wig 0.4s linear infinite reverse;
+}
+@keyframes wig{
+	0%{transform: rotate(0deg);}
+	50%{transform: rotate(20deg);}
+	100%{transform: rotate(5deg);}
+}
+.wing1:nth-child(2){
+	width: 40px
+}
+.wing1:nth-child(3){
+	width: 30px
+}
+.wing1:nth-child(4){
+	 width: 20px
+}
+.wing1:nth-child(5){
+	width: 10px
+}
+.owl-rightwings>.wing1{
+    background-color: #442f0a;
+    border-bottom: 1px solid #694910;
+}
+.owl-flat{
+	width: 50%;
+	float: left;
+}
+.inside-flat{
+	width: 10px;
+    height: 15px;
+    margin: 0 auto;
+    background-color: #634819;
+    border-radius: 10px;
+    box-shadow: inset 0px 4px 6px #000000;
+}
